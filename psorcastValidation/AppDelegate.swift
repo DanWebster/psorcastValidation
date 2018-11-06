@@ -8,9 +8,11 @@
 
 import UIKit
 import CoreData
+import BridgeApp
+import BridgeSDK
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: SBAAppDelegate {
 
     var window: UIWindow?
 

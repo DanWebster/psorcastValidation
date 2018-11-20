@@ -25,6 +25,7 @@
 		4406E369218AB50F008BDC7B /* Research.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4406E324218AB440008BDC7B /* Research.framework */; };
 		4406E36A218AB50F008BDC7B /* Research.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4406E324218AB440008BDC7B /* Research.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		44C6F360219224D20005E296 /* psorcast-validation.pem in Resources */ = {isa = PBXBuildFile; fileRef = 44C6F35F219224D20005E296 /* psorcast-validation.pem */; };
+		44C6F3622193A1C90005E296 /* BridgeInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44C6F3612193A1C90005E296 /* BridgeInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +231,7 @@
 		4406E331218AB45F008BDC7B /* BridgeSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BridgeSDK.xcodeproj; path = "BridgeApp-Apple-SDK/Bridge-iOS-SDK/BridgeSDK.xcodeproj"; sourceTree = "<group>"; };
 		4406E34E218AB491008BDC7B /* BridgeApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BridgeApp.xcodeproj; path = "BridgeApp-Apple-SDK/BridgeApp/BridgeApp.xcodeproj"; sourceTree = "<group>"; };
 		44C6F35F219224D20005E296 /* psorcast-validation.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "psorcast-validation.pem"; sourceTree = "<group>"; };
+		44C6F3612193A1C90005E296 /* BridgeInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BridgeInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,7 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				4406E275218A94AE008BDC7B /* psorcastValidation */,
-				44C6F347219223C30005E296 /* Resources */,
+				44C6F347219223C30005E296 /* SupportFiles */,
 				4406E28D218A94B0008BDC7B /* psorcastValidationTests */,
 				4406E298218A94B0008BDC7B /* psorcastValidationUITests */,
 				4406E274218A94AE008BDC7B /* Products */,
@@ -374,12 +376,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		44C6F347219223C30005E296 /* Resources */ = {
+		44C6F347219223C30005E296 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				44C6F3612193A1C90005E296 /* BridgeInfo.plist */,
 				44C6F35F219224D20005E296 /* psorcast-validation.pem */,
 			);
-			path = Resources;
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -652,6 +655,7 @@
 				4406E281218A94B0008BDC7B /* Assets.xcassets in Resources */,
 				44C6F360219224D20005E296 /* psorcast-validation.pem in Resources */,
 				4406E27C218A94AE008BDC7B /* Main.storyboard in Resources */,
+				44C6F3622193A1C90005E296 /* BridgeInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

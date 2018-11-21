@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>appGroupIdentifier</key>
-	<string>org.sageBionetworks.psorcastValidation</string>
 	<key>studyIdentifier</key>
 	<string>psorcast-validation</string>
 	<key>certificateName</key>

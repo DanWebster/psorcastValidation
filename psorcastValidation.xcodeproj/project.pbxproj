@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440193F321A4A040001410D8 /* ExternalIDRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440193F221A4A040001410D8 /* ExternalIDRegistrationViewController.swift */; };
 		4406E277218A94AE008BDC7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406E276218A94AE008BDC7B /* AppDelegate.swift */; };
 		4406E279218A94AE008BDC7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406E278218A94AE008BDC7B /* ViewController.swift */; };
 		4406E27C218A94AE008BDC7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4406E27A218A94AE008BDC7B /* Main.storyboard */; };
@@ -210,6 +211,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		440193F221A4A040001410D8 /* ExternalIDRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalIDRegistrationViewController.swift; sourceTree = "<group>"; };
 		4406E273218A94AE008BDC7B /* psorcastValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = psorcastValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4406E276218A94AE008BDC7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4406E278218A94AE008BDC7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +266,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440193DA21A49E8C001410D8 /* signIn */ = {
+			isa = PBXGroup;
+			children = (
+				440193F221A4A040001410D8 /* ExternalIDRegistrationViewController.swift */,
+			);
+			path = signIn;
+			sourceTree = "<group>";
+		};
 		4406E26A218A94AE008BDC7B = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +299,7 @@
 		4406E275218A94AE008BDC7B /* psorcastValidation */ = {
 			isa = PBXGroup;
 			children = (
+				440193DA21A49E8C001410D8 /* signIn */,
 				4406E2A7218AA3A2008BDC7B /* psorcastValidation.entitlements */,
 				4406E276218A94AE008BDC7B /* AppDelegate.swift */,
 				4406E278218A94AE008BDC7B /* ViewController.swift */,
@@ -683,6 +694,7 @@
 				4406E27F218A94AE008BDC7B /* psorcastValidation.xcdatamodeld in Sources */,
 				4406E279218A94AE008BDC7B /* ViewController.swift in Sources */,
 				4406E277218A94AE008BDC7B /* AppDelegate.swift in Sources */,
+				440193F321A4A040001410D8 /* ExternalIDRegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

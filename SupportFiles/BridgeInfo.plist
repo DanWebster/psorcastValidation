@@ -8,5 +8,9 @@
 	<string>psorcast-validation.pem</string>
 	<key>appUpdateURL</key>
 	<string>https://notsupported.null</string>
+	<key>cacheDaysAhead</key>
+	<integer>10</integer>
+	<key>cacheDaysBehind</key>
+	<integer>365</integer>
 </dict>
 </plist>

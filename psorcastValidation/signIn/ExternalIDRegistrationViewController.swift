@@ -83,9 +83,27 @@ class ExternalIDRegistrationViewController: RSDTableStepViewController {
                 return
         }
             
-        // Sign in using legacy style so the Android code doesn't have to change. syoung 11/02/2018
-        BridgeSDK.authManager.signIn(withExternalId: externalId, password: externalId, completion: { (task, result, error) in
-            completion(task, result, error)
+        
+        let signUp: SBBSignUp = SBBSignUp()
+        signUp.checkForConsent = true
+        signUp.externalId = externalId
+        signUp.password = externalId
+        signUp.sharingScope = "all_qualified_researchers"
+        
+        if externalId.hasPrefix("TEST") {
+            signUp.dataGroups = ["test_user"]
+        }
+        
+        BridgeSDK.authManager.signUpStudyParticipant(signUp, completion: { (task, result, error) in
+            guard error == nil else {
+                completion(task, result, error)
+                return
+            }
+            
+            // we're signed up so sign in
+            BridgeSDK.authManager.signIn(withExternalId: signUp.externalId!, password: signUp.password!, completion: { (task, result, error) in
+                completion(task, result, error)
+            })
         })
     }
     

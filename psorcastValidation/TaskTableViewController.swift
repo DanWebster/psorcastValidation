@@ -32,7 +32,7 @@
 //
 
 import UIKit
-import CardiorespiratoryFitness
+//import CardiorespiratoryFitness
 import Research
 import ResearchUI
 
@@ -40,8 +40,9 @@ class TaskTableViewController: UITableViewController {
 
     @IBOutlet weak var detailLabel: UILabel!
     
-    var tasks = CRFTaskIdentifier.allCases.map { CRFTaskInfo($0) }
-    
+    // A list of all the tasks included in this module.
+    //var tasks = CRFTaskIdentifier.allCases.map { CRFTaskInfo($0) }
+              
     override func viewDidLoad() {
         super.viewDidLoad()
 

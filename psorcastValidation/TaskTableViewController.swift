@@ -41,8 +41,9 @@ class TaskTableViewController: UITableViewController {
     @IBOutlet weak var detailLabel: UILabel!
     
     // A list of all the tasks included in this module.
-    var tasks =  MCTTaskIdentifier.all().map {MCTTaskInfo($0)} 
-              
+    //var tasks =  MCTTaskIdentifier.all().map {MCTTaskInfo($0)}
+    var tasks = [MCTTaskInfo(MCTTaskIdentifier.walk30s)]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

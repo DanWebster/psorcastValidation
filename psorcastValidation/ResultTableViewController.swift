@@ -34,12 +34,14 @@
 import UIKit
 import ResearchUI
 import Research
+import BridgeApp
 
 class ResultTableViewController: UITableViewController, RSDTaskViewControllerDelegate {
 
     var taskViewModel: RSDTaskViewModel?
     var result: RSDResult?
     var firstAppearance: Bool = true
+    let archiveManager = SBAArchiveManager()
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -151,8 +153,9 @@ class ResultTableViewController: UITableViewController, RSDTaskViewControllerDel
     func taskController(_ taskController: RSDTaskController, readyToSave taskViewModel: RSDTaskViewModel) {
         print("\n\n=== Ready to Save: \(taskViewModel.description)")
         
-        //taskViewModel.archiveResults(with: CRFArchiveManager.shared) {
-        //}
+        taskViewModel.archiveResults(with: self.archiveManager) { (_) in
+            
+        }
     }
     
     func taskViewController(_ taskViewController: UIViewController, shouldShowTaskInfoFor step: Any) -> Bool {

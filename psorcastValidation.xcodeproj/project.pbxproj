@@ -28,8 +28,8 @@
 		4413093D21ED0F0E007B3D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4413093C21ED0F0E007B3D98 /* Main.storyboard */; };
 		4413094021ED0FB6007B3D98 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4413093E21ED0FB6007B3D98 /* ResultTableViewController.swift */; };
 		4413094121ED0FB6007B3D98 /* FileResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4413093F21ED0FB6007B3D98 /* FileResultViewController.swift */; };
-		4415AE8521FA3B3E00EE4FA0 /* MotorControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4415AE8221FA3B1100EE4FA0 /* MotorControl.framework */; };
-		4415AE8621FA3B3E00EE4FA0 /* MotorControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4415AE8221FA3B1100EE4FA0 /* MotorControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		441E9A392229D82700F6C521 /* MotorControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441E9A362229D80B00F6C521 /* MotorControl.framework */; };
+		441E9A3A2229D82700F6C521 /* MotorControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 441E9A362229D80B00F6C521 /* MotorControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		44C6F360219224D20005E296 /* psorcast-validation.pem in Resources */ = {isa = PBXBuildFile; fileRef = 44C6F35F219224D20005E296 /* psorcast-validation.pem */; };
 		44C6F3622193A1C90005E296 /* BridgeInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44C6F3612193A1C90005E296 /* BridgeInfo.plist */; };
 /* End PBXBuildFile section */
@@ -196,23 +196,23 @@
 			remoteGlobalIDString = FF8B53131FCE678E006B6937;
 			remoteInfo = "Research (iOS)";
 		};
-		4415AE8121FA3B1100EE4FA0 /* PBXContainerItemProxy */ = {
+		441E9A352229D80B00F6C521 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4415AE7C21FA3B1100EE4FA0 /* MotorControl.xcodeproj */;
+			containerPortal = 441E9A302229D80B00F6C521 /* MotorControl.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F813D6E121BB40D900795664;
 			remoteInfo = MotorControl;
 		};
-		4415AE8321FA3B1100EE4FA0 /* PBXContainerItemProxy */ = {
+		441E9A372229D80B00F6C521 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4415AE7C21FA3B1100EE4FA0 /* MotorControl.xcodeproj */;
+			containerPortal = 441E9A302229D80B00F6C521 /* MotorControl.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F813D6EA21BB40D900795664;
 			remoteInfo = MotorControlTests;
 		};
-		4415AE8721FA3B3E00EE4FA0 /* PBXContainerItemProxy */ = {
+		441E9A3B2229D82700F6C521 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4415AE7C21FA3B1100EE4FA0 /* MotorControl.xcodeproj */;
+			containerPortal = 441E9A302229D80B00F6C521 /* MotorControl.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F813D6E021BB40D900795664;
 			remoteInfo = MotorControl;
@@ -230,7 +230,7 @@
 				4406E362218AB4EE008BDC7B /* BridgeApp.framework in Embed Frameworks */,
 				4406E366218AB501008BDC7B /* ResearchUI.framework in Embed Frameworks */,
 				4406E36A218AB50F008BDC7B /* Research.framework in Embed Frameworks */,
-				4415AE8621FA3B3E00EE4FA0 /* MotorControl.framework in Embed Frameworks */,
+				441E9A3A2229D82700F6C521 /* MotorControl.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +262,7 @@
 		4413093C21ED0F0E007B3D98 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4413093E21ED0FB6007B3D98 /* ResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
 		4413093F21ED0FB6007B3D98 /* FileResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResultViewController.swift; sourceTree = "<group>"; };
-		4415AE7C21FA3B1100EE4FA0 /* MotorControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MotorControl.xcodeproj; path = MotorControl/MotorControl.xcodeproj; sourceTree = "<group>"; };
+		441E9A302229D80B00F6C521 /* MotorControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MotorControl.xcodeproj; path = MotorControl/MotorControl.xcodeproj; sourceTree = "<group>"; };
 		44C6F35F219224D20005E296 /* psorcast-validation.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "psorcast-validation.pem"; sourceTree = "<group>"; };
 		44C6F3612193A1C90005E296 /* BridgeInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BridgeInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -272,7 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4415AE8521FA3B3E00EE4FA0 /* MotorControl.framework in Frameworks */,
+				441E9A392229D82700F6C521 /* MotorControl.framework in Frameworks */,
 				4406E369218AB50F008BDC7B /* Research.framework in Frameworks */,
 				4406E35D218AB4CF008BDC7B /* BridgeSDK.framework in Frameworks */,
 				4406E30B218AB37D008BDC7B /* HealthKit.framework in Frameworks */,
@@ -368,7 +368,7 @@
 		4406E2A8218AA4DF008BDC7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4415AE7C21FA3B1100EE4FA0 /* MotorControl.xcodeproj */,
+				441E9A302229D80B00F6C521 /* MotorControl.xcodeproj */,
 				4406E34E218AB491008BDC7B /* BridgeApp.xcodeproj */,
 				4406E331218AB45F008BDC7B /* BridgeSDK.xcodeproj */,
 				4406E319218AB43F008BDC7B /* Research.xcodeproj */,
@@ -423,11 +423,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4415AE7D21FA3B1100EE4FA0 /* Products */ = {
+		441E9A312229D80B00F6C521 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4415AE8221FA3B1100EE4FA0 /* MotorControl.framework */,
-				4415AE8421FA3B1100EE4FA0 /* MotorControlTests.xctest */,
+				441E9A362229D80B00F6C521 /* MotorControl.framework */,
+				441E9A382229D80B00F6C521 /* MotorControlTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -460,7 +460,7 @@
 				4406E364218AB4EE008BDC7B /* PBXTargetDependency */,
 				4406E368218AB501008BDC7B /* PBXTargetDependency */,
 				4406E36C218AB50F008BDC7B /* PBXTargetDependency */,
-				4415AE8821FA3B3E00EE4FA0 /* PBXTargetDependency */,
+				441E9A3C2229D82700F6C521 /* PBXTargetDependency */,
 			);
 			name = psorcastValidation;
 			productName = psorcastValidation;
@@ -564,8 +564,8 @@
 					ProjectRef = 4406E331218AB45F008BDC7B /* BridgeSDK.xcodeproj */;
 				},
 				{
-					ProductGroup = 4415AE7D21FA3B1100EE4FA0 /* Products */;
-					ProjectRef = 4415AE7C21FA3B1100EE4FA0 /* MotorControl.xcodeproj */;
+					ProductGroup = 441E9A312229D80B00F6C521 /* Products */;
+					ProjectRef = 441E9A302229D80B00F6C521 /* MotorControl.xcodeproj */;
 				},
 				{
 					ProductGroup = 4406E31A218AB43F008BDC7B /* Products */;
@@ -705,18 +705,18 @@
 			remoteRef = 4406E35B218AB491008BDC7B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4415AE8221FA3B1100EE4FA0 /* MotorControl.framework */ = {
+		441E9A362229D80B00F6C521 /* MotorControl.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = MotorControl.framework;
-			remoteRef = 4415AE8121FA3B1100EE4FA0 /* PBXContainerItemProxy */;
+			remoteRef = 441E9A352229D80B00F6C521 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4415AE8421FA3B1100EE4FA0 /* MotorControlTests.xctest */ = {
+		441E9A382229D80B00F6C521 /* MotorControlTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = MotorControlTests.xctest;
-			remoteRef = 4415AE8321FA3B1100EE4FA0 /* PBXContainerItemProxy */;
+			remoteRef = 441E9A372229D80B00F6C521 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -814,10 +814,10 @@
 			name = "Research (iOS)";
 			targetProxy = 4406E36B218AB50F008BDC7B /* PBXContainerItemProxy */;
 		};
-		4415AE8821FA3B3E00EE4FA0 /* PBXTargetDependency */ = {
+		441E9A3C2229D82700F6C521 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MotorControl;
-			targetProxy = 4415AE8721FA3B3E00EE4FA0 /* PBXContainerItemProxy */;
+			targetProxy = 441E9A3B2229D82700F6C521 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

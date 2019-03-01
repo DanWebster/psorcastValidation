@@ -5,7 +5,7 @@
 	<key>studyIdentifier</key>
 	<string>psorcast-validation</string>
 	<key>certificateName</key>
-	<string>psorcast-validation.pem</string>
+	<string>psorcast-validation</string>
 	<key>appUpdateURL</key>
 	<string>https://notsupported.null</string>
 	<key>cacheDaysAhead</key>

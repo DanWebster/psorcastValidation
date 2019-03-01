@@ -1,5 +1,5 @@
 {
-    "identifier":"Walk30s",
+    "identifier":"Walk30Seconds",
     "shouldHideActions":["goBackward", "skip"],
     "progressMarkers":["volumeUp", "pantsWithPocket","phoneInPocket.1","walk"],
     "steps":[
@@ -7,7 +7,7 @@
             "identifier":"introduction",
             "type":"overview",
             "title":"30 Second Walk",
-            "text":"In this activity you will be walking continuously at your normal pace for 30 seconds",
+            "text":"In this activity, you will be walking continuously at your normal pace for 30 seconds.",
             "permissions":[
                 {
                     "permissionType":"motion",
@@ -16,9 +16,9 @@
             ],
             "image":{
                 "type":"animated",
-                "imageNames":["F-Walking1", "F-Walking2", "F-Walking1", "F-Walking2", "F-Walking3", "F-Walking4", "F-Walking5"],
+                "imageNames":["Walk30Seconds01", "Walk30Seconds02", "Walk30Seconds03", "Walk30Seconds04", "Walk30Seconds05","Walk30Seconds06", "Walk30Seconds07", "Walk30Seconds08", "Walk30Seconds09", "Walk30Seconds10"],
                 "placementType":"topMarginBackground",
-                "animationDuration":2.5
+                "animationDuration":5.0
             },
             "icons": [
                 {
@@ -64,9 +64,9 @@
             "isFirstRunOnly": false,
             "image":{
                 "type":"animated",
-                "imageNames":["F-Walking1", "F-Walking2", "F-Walking1", "F-Walking2", "F-Walking3", "F-Walking4", "F-Walking5"],
+                "imageNames":["Walk30Seconds01", "Walk30Seconds02", "Walk30Seconds03", "Walk30Seconds04", "Walk30Seconds05","Walk30Seconds06", "Walk30Seconds07", "Walk30Seconds08", "Walk30Seconds09", "Walk30Seconds10"],
                 "placementType":"topMarginBackground",
-                "animationDuration":2.5
+                "animationDuration":5.0
             },
             "colorTheme":{
                 "colorStyle": {

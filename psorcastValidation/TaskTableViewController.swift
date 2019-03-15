@@ -35,19 +35,25 @@ import UIKit
 import MotorControl
 import Research
 import ResearchUI
+import BridgeApp
 
-//this shoudl bea  task delegate (or someone does!)
+class TaskTableViewController: UITableViewController, RSDTaskViewControllerDelegate {
 
-class TaskTableViewController: UITableViewController {
-
-    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var participantIDLabel: UILabel!
+    
+    var participantID : String!
+    let archiveManager = SBAArchiveManager()
     
     // A list of all the tasks included in this module.
     //var tasks =  MCTTaskIdentifier.all().map {MCTTaskInfo($0)}
+    //@QUESTION FOR SHANNON: how to get a survey from Bridge Study Manager here and interact with AppConfig?
+        //For now, if you don't have a more complicated scehdule, hard code this here instead
+        //Note that for new tasks, can make them as a framework within a workspace, but even if you do this within this project, MAKE SURE TO MAKE A SEPARATE STORYBOARD
     var tasks = [MCTTaskInfo(MCTTaskIdentifier.walk30Seconds)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.participantIDLabel.text = self.participantID
 
         // Use automatic hieght dimension
         tableView.rowHeight = UITableView.automaticDimension
@@ -120,23 +126,39 @@ class TaskTableViewController: UITableViewController {
         }
         return cell
     }
- 
-    // MARK: - Navigation
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        guard let cell = sender as? UITableViewCell,
-            let indexPath = self.tableView.indexPath(for: cell),
-            let vc = segue.destination as? ResultTableViewController
-            else {
-                return
-        }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let taskInfo = tasks[indexPath.row]
-        vc.taskViewModel = RSDTaskViewModel(task: taskInfo.task)
-        vc.title = taskInfo.title ?? taskInfo.identifier
-        vc.navigationItem.title = vc.title
+        let taskViewModel = RSDTaskViewModel(taskInfo: taskInfo)
+        var answerResult = RSDAnswerResultObject(identifier: "participantID", answerType: .string)
+        answerResult.value = self.participantID
+        taskViewModel.taskResult.appendAsyncResult(with: answerResult)
+        let taskViewController = RSDTaskViewController(taskViewModel: taskViewModel)
+        taskViewController.delegate = self
+        self.present(taskViewController, animated: true) {
+            tableView.deselectRow(at: indexPath, animated: false)
+        }
+        
     }
+    
+    // MARK: - RSDTaskControllerDelegate
+    
+    func taskController(_ taskController: RSDTaskController, didFinishWith reason: RSDTaskFinishReason, error: Error?) {
+        
+        // dismiss the view controller
+        (taskController as? UIViewController)?.dismiss(animated: true) {
+        }
+    }
+    
+    func taskController(_ taskController: RSDTaskController, readyToSave taskViewModel: RSDTaskViewModel) {
+        print("\n\n=== Ready to Save: \(taskViewModel.description)")
+        
+        taskViewModel.archiveResults(with: self.archiveManager) { (_) in
+            
+        }
+    }
+    
 }
 
 class ImageTableViewCell : UITableViewCell {
@@ -146,3 +168,5 @@ class ImageTableViewCell : UITableViewCell {
     @IBOutlet weak var subtitleLabel: UILabel?
     
 }
+
+

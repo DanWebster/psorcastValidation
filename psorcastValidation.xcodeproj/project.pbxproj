@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		440193F321A4A040001410D8 /* ExternalIDRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440193F221A4A040001410D8 /* ExternalIDRegistrationViewController.swift */; };
 		4406E277218A94AE008BDC7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406E276218A94AE008BDC7B /* AppDelegate.swift */; };
-		4406E279218A94AE008BDC7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406E278218A94AE008BDC7B /* ViewController.swift */; };
 		4406E27F218A94AE008BDC7B /* psorcastValidation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4406E27D218A94AE008BDC7B /* psorcastValidation.xcdatamodeld */; };
 		4406E281218A94B0008BDC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4406E280218A94B0008BDC7B /* Assets.xcassets */; };
 		4406E284218A94B0008BDC7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4406E282218A94B0008BDC7B /* LaunchScreen.storyboard */; };
@@ -26,12 +25,11 @@
 		4406E36A218AB50F008BDC7B /* Research.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4406E324218AB440008BDC7B /* Research.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4413093B21ED0ED9007B3D98 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4413093A21ED0ED9007B3D98 /* TaskTableViewController.swift */; };
 		4413093D21ED0F0E007B3D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4413093C21ED0F0E007B3D98 /* Main.storyboard */; };
-		4413094021ED0FB6007B3D98 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4413093E21ED0FB6007B3D98 /* ResultTableViewController.swift */; };
-		4413094121ED0FB6007B3D98 /* FileResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4413093F21ED0FB6007B3D98 /* FileResultViewController.swift */; };
 		441E9A392229D82700F6C521 /* MotorControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441E9A362229D80B00F6C521 /* MotorControl.framework */; };
 		441E9A3A2229D82700F6C521 /* MotorControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 441E9A362229D80B00F6C521 /* MotorControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		44C6F360219224D20005E296 /* psorcast-validation.pem in Resources */ = {isa = PBXBuildFile; fileRef = 44C6F35F219224D20005E296 /* psorcast-validation.pem */; };
 		44C6F3622193A1C90005E296 /* BridgeInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44C6F3612193A1C90005E296 /* BridgeInfo.plist */; };
+		44F2D1D4223C4E68002AC7BE /* ParticipantIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2D1D3223C4E68002AC7BE /* ParticipantIDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,7 +239,6 @@
 		440193F221A4A040001410D8 /* ExternalIDRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalIDRegistrationViewController.swift; sourceTree = "<group>"; };
 		4406E273218A94AE008BDC7B /* psorcastValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = psorcastValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4406E276218A94AE008BDC7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4406E278218A94AE008BDC7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4406E27E218A94AE008BDC7B /* psorcastValidation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = psorcastValidation.xcdatamodel; sourceTree = "<group>"; };
 		4406E280218A94B0008BDC7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4406E283218A94B0008BDC7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -260,11 +257,10 @@
 		4406E34E218AB491008BDC7B /* BridgeApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BridgeApp.xcodeproj; path = "BridgeApp-Apple-SDK/BridgeApp/BridgeApp.xcodeproj"; sourceTree = "<group>"; };
 		4413093A21ED0ED9007B3D98 /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		4413093C21ED0F0E007B3D98 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		4413093E21ED0FB6007B3D98 /* ResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
-		4413093F21ED0FB6007B3D98 /* FileResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResultViewController.swift; sourceTree = "<group>"; };
 		441E9A302229D80B00F6C521 /* MotorControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MotorControl.xcodeproj; path = MotorControl/MotorControl.xcodeproj; sourceTree = "<group>"; };
 		44C6F35F219224D20005E296 /* psorcast-validation.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "psorcast-validation.pem"; sourceTree = "<group>"; };
 		44C6F3612193A1C90005E296 /* BridgeInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BridgeInfo.plist; sourceTree = "<group>"; };
+		44F2D1D3223C4E68002AC7BE /* ParticipantIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantIDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,10 +330,8 @@
 				440193DA21A49E8C001410D8 /* signIn */,
 				4406E2A7218AA3A2008BDC7B /* psorcastValidation.entitlements */,
 				4406E276218A94AE008BDC7B /* AppDelegate.swift */,
+				44F2D1D3223C4E68002AC7BE /* ParticipantIDViewController.swift */,
 				4413093A21ED0ED9007B3D98 /* TaskTableViewController.swift */,
-				4413093F21ED0FB6007B3D98 /* FileResultViewController.swift */,
-				4413093E21ED0FB6007B3D98 /* ResultTableViewController.swift */,
-				4406E278218A94AE008BDC7B /* ViewController.swift */,
 				4406E280218A94B0008BDC7B /* Assets.xcassets */,
 				4406E282218A94B0008BDC7B /* LaunchScreen.storyboard */,
 				4413093C21ED0F0E007B3D98 /* Main.storyboard */,
@@ -755,11 +749,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4413094121ED0FB6007B3D98 /* FileResultViewController.swift in Sources */,
 				4413093B21ED0ED9007B3D98 /* TaskTableViewController.swift in Sources */,
+				44F2D1D4223C4E68002AC7BE /* ParticipantIDViewController.swift in Sources */,
 				4406E27F218A94AE008BDC7B /* psorcastValidation.xcdatamodeld in Sources */,
-				4413094021ED0FB6007B3D98 /* ResultTableViewController.swift in Sources */,
-				4406E279218A94AE008BDC7B /* ViewController.swift in Sources */,
 				4406E277218A94AE008BDC7B /* AppDelegate.swift in Sources */,
 				440193F321A4A040001410D8 /* ExternalIDRegistrationViewController.swift in Sources */,
 			);

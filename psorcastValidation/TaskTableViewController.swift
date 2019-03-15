@@ -53,7 +53,7 @@ class TaskTableViewController: UITableViewController, RSDTaskViewControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.participantIDLabel.text = self.participantID
+        self.participantIDLabel.text = "Current Participant ID: " + self.participantID
 
         // Use automatic hieght dimension
         tableView.rowHeight = UITableView.automaticDimension

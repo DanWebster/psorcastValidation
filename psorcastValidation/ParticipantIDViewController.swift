@@ -8,12 +8,16 @@
 
 import UIKit
 
-class ParticipantIDViewController: UIViewController {
+class ParticipantIDViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.textField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return textField.endEditing(false)
     }
     
     @IBOutlet weak var textField: UITextField!

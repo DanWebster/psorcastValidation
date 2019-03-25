@@ -327,6 +327,7 @@
 		4406E275218A94AE008BDC7B /* psorcastValidation */ = {
 			isa = PBXGroup;
 			children = (
+				441DC8E322449BE70011492B /* fingersPhoto */,
 				440193DA21A49E8C001410D8 /* signIn */,
 				4406E2A7218AA3A2008BDC7B /* psorcastValidation.entitlements */,
 				4406E276218A94AE008BDC7B /* AppDelegate.swift */,
@@ -415,6 +416,13 @@
 				4406E35C218AB491008BDC7B /* BridgeAppExample.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		441DC8E322449BE70011492B /* fingersPhoto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fingersPhoto;
 			sourceTree = "<group>";
 		};
 		441E9A312229D80B00F6C521 /* Products */ = {
